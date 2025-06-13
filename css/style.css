@@ -193,7 +193,7 @@ button {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.features__item.item-bacgroud {
+.features__item.item-backgroud {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
@@ -210,7 +210,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.title-item {
+.item-title:not(.footer__item.item-title) {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
