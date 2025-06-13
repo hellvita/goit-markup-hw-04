@@ -211,13 +211,12 @@ button {
   margin-bottom: 8px;
 }
 
-.item-text,
-.footer__text {
+.item-text {
   font-size: 16px;
   letter-spacing: inherit;
 }
 
-.footer__text {
+.footer__item.item-text {
   color: #f4f4fd;
   max-width: 264px;
 }
@@ -270,7 +269,7 @@ button {
   gap: 24px;
 }
 
-.team__card .socials.link {
+.socials.link {
   display: block;
   background-color: #4d5ae5;
   width: 40px;
@@ -279,7 +278,7 @@ button {
   position: relative;
 }
 
-.team__card .socials.link .icon {
+.socials.link .icon {
   fill: #f4f4fd;
   position: absolute;
   top: 50%;
@@ -321,7 +320,25 @@ button {
 
 .footer .logo {
   display: inline-block;
+}
+
+.footer__list {
+  display: flex;
+  gap: 120px;
+}
+
+.footer__item.item-title {
   margin-bottom: 16px;
+}
+
+.footer__item.item-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__item .socials.link:hover,
+.footer__item .socials.link:focus {
+  background-color: #31d0aa;
 }
 
 .container-page {
