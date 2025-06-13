@@ -224,11 +224,6 @@ button {
   letter-spacing: inherit;
 }
 
-.footer__item.item-text {
-  color: #f4f4fd;
-  max-width: 264px;
-}
-
 .title-section {
   font-size: 36px;
   line-height: 1.11;
@@ -338,6 +333,15 @@ button {
 
 .footer__item.item-title {
   margin-bottom: 16px;
+}
+
+.footer__item.item-title.item-text {
+  font-weight: 500;
+}
+
+.footer__item.item-text {
+  color: #f4f4fd;
+  max-width: 264px;
 }
 
 .footer__item.item-socials {
