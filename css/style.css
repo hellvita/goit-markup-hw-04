@@ -255,8 +255,41 @@ button {
 }
 
 .team__card-content.card-content {
-  text-align: center;
   padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__item.item-text {
+  margin-bottom: 8px;
+}
+
+.team__item.item-socials {
+  display: flex;
+  gap: 24px;
+}
+
+.team__card .socials.link {
+  display: block;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.team__card .socials.link .icon {
+  fill: #f4f4fd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team__card .socials.link:hover,
+.team__card .socials.link:focus {
+  background-color: #404bbf;
 }
 
 .portfolio__list {
