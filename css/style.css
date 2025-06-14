@@ -2,6 +2,9 @@
   --color-iris: #4d5ae5;
   --color-ocean: #404bbf;
   --color-navy-blue: #2e2f42;
+  --color-navy-blue-8: rgba(46, 47, 66, 0.08);
+  --color-navy-blue-16: rgba(46, 47, 66, 0.16);
+  --color-navy-blue-70: rgba(46, 47, 66, 0.7);
   --color-green: #31d0aa;
   --color-slate: #434455;
   --color-light-slate: #8e8f99;
@@ -54,6 +57,8 @@ img {
 
 .header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px var(--color-navy-blue-8),
+    0px 1px 1px var(--color-navy-blue-16), 0px 1px 6px var(--color-navy-blue-8);
 }
 
 .header .container {
@@ -142,8 +147,8 @@ address {
   padding: 188px 0;
   background-image: linear-gradient(
       to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+      var(--color-navy-blue-70),
+      var(--color-navy-blue-70)
     ),
     url(../images/hero/bg-pic.jpg);
   background-repeat: no-repeat;
@@ -278,8 +283,8 @@ button {
   background-color: var(--color-white);
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 var(--color-navy-blue-8),
+    0 1px 1px 0 var(--color-navy-blue-16), 0 1px 6px 0 var(--color-navy-blue-8);
 }
 
 .team__list {
@@ -338,8 +343,8 @@ button {
 .portfolio__card:hover,
 .portfolio__card:focus {
   cursor: pointer;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 var(--color-navy-blue-8),
+    0 1px 1px 0 var(--color-navy-blue-16), 0 1px 6px 0 var(--color-navy-blue-8);
 }
 
 .portfolio__card-content.card-overlay {
