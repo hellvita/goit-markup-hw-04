@@ -408,11 +408,11 @@ button {
 
 .footer__item.item-title {
   margin-bottom: 16px;
-  color: var(--color-white);
 }
 
 .footer__item.item-title.item-text {
   font-weight: 500;
+  color: var(--color-white);
 }
 
 .footer__item.item-text {
