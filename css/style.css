@@ -1,7 +1,19 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-white: #fff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #fff;
+  color: var(--color-slate);
+  background-color: var(--color-white);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -41,7 +53,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .header .container {
@@ -72,7 +84,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--color-iris);
 }
 
 .header .logo {
@@ -84,27 +96,27 @@ img {
 }
 
 .logo__highlight--header {
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 
 .logo__highlight--footer {
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
 
 .link.link--nav {
   font-size: 16px;
   font-weight: 500;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   letter-spacing: inherit;
 }
 
 .link.link--nav.current-page {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 .link.link--nav.current-page::after {
   content: "";
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -119,7 +131,7 @@ address {
 
 .link.link--contacts {
   font-size: 16px;
-  color: #434455;
+  color: var(--color-slate);
   letter-spacing: inherit;
 }
 
@@ -146,7 +158,7 @@ address {
 .hero__title {
   font-size: 56px;
   line-height: 1.07;
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
   letter-spacing: inherit;
   max-width: 496px;
@@ -157,8 +169,8 @@ button {
 }
 
 .hero__button {
-  background-color: #4d5ae5;
-  color: #fff;
+  background-color: var(--color-iris);
+  color: var(--color-white);
   font-size: 16px;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -172,12 +184,12 @@ button {
 
 .hero__button:hover,
 .hero__button:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .link:hover:not(.logo),
 .link:focus:not(.logo) {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 .section.features,
@@ -210,9 +222,9 @@ button {
 }
 
 .features__item.item-backgroud {
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--color-light-slate);
   border-radius: 4px;
-  background-color: #f4f4fd;
+  background-color: var(--color-cloud);
   width: 264px;
   height: 112px;
   position: relative;
@@ -231,7 +243,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: inherit;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   margin-bottom: 8px;
 }
 
@@ -243,7 +255,7 @@ button {
 .title-section {
   font-size: 36px;
   line-height: 1.11;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: inherit;
@@ -252,15 +264,15 @@ button {
 
 .hero,
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--color-navy-blue);
 }
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--color-cloud);
 }
 
 .team__card {
-  background-color: #fff;
+  background-color: var(--color-white);
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -289,7 +301,7 @@ button {
 }
 
 .socials.link {
-  background-color: #4d5ae5;
+  background-color: var(--color-iris);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -297,7 +309,7 @@ button {
 }
 
 .socials.link .icon {
-  fill: #f4f4fd;
+  fill: var(--color-cloud);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,7 +318,7 @@ button {
 
 .team__card .socials.link:hover,
 .team__card .socials.link:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .portfolio__list {
@@ -334,8 +346,8 @@ button {
 
 .portfolio__card-content .overlay-content {
   position: absolute;
-  background-color: #4d5ae5;
-  color: #f4f4fd;
+  background-color: var(--color-iris);
+  color: var(--color-cloud);
   padding: 40px 32px;
   top: 0;
   left: 0;
@@ -351,7 +363,7 @@ button {
 
 .portfolio__card-content.card-content {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-cornflower);
   border-top: none;
 }
 
@@ -377,7 +389,7 @@ button {
 }
 
 .footer__item.item-text {
-  color: #f4f4fd;
+  color: var(--color-cloud);
   max-width: 264px;
 }
 
@@ -388,7 +400,7 @@ button {
 
 .footer__item .socials.link:hover,
 .footer__item .socials.link:focus {
-  background-color: #31d0aa;
+  background-color: var(--color-green);
 }
 
 .container-page {
