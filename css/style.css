@@ -312,6 +312,28 @@ button {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.portfolio__card-content.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__card-content .overlay-content {
+  position: absolute;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+}
+
+.portfolio__card:hover .overlay-content,
+.portfolio__card:focus .overlay-content {
+  transform: translatey(0);
+}
+
 .portfolio__card-content.card-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -365,7 +387,7 @@ main {
 }
 
 .animation {
-  transition-property: hover, focus;
+  transition-property: hover, focus, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
