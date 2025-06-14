@@ -144,6 +144,7 @@ address {
 }
 
 .section.hero {
+  max-width: 1440px;
   padding: 188px 0;
   background-image: linear-gradient(
       to bottom,
@@ -230,6 +231,9 @@ button {
 }
 
 .features__item.item-backgroud {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
   background-color: var(--color-cloud);
