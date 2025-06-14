@@ -374,7 +374,7 @@ button {
 
 .portfolio__card:hover .overlay-content,
 .portfolio__card:focus .overlay-content {
-  transform: translatey(0);
+  transform: translatey(0%);
 }
 
 .portfolio__card-content.card-content {
@@ -430,7 +430,7 @@ main {
 }
 
 .animation {
-  transition-property: color, background-color, transform;
+  transition-property: color, box-shadow, background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
