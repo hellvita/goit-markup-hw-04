@@ -387,13 +387,17 @@ button {
   padding: 100px 0;
 }
 
-.footer .logo {
-  display: inline-block;
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 
-.footer__list {
-  display: flex;
-  gap: 120px;
+.footer__main {
+  margin-right: 120px;
+}
+
+.footer .logo {
+  display: inline-block;
 }
 
 .footer__item.item-title {
