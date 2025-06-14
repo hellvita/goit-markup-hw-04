@@ -25,6 +25,7 @@ ol {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 img {
@@ -95,6 +96,21 @@ img {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: inherit;
+}
+
+.link.link--nav.current-page {
+  color: #404bbf;
+}
+
+.link.link--nav.current-page::after {
+  content: "";
+  background-color: #404bbf;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(25px);
 }
 
 address {
@@ -273,7 +289,6 @@ button {
 }
 
 .socials.link {
-  display: block;
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
