@@ -112,6 +112,7 @@ img {
 
 .link.link--nav.current-page {
   color: var(--color-ocean);
+  position: relative;
 }
 
 .link.link--nav.current-page::after {
@@ -122,7 +123,9 @@ img {
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
-  transform: translateY(25px);
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 address {
