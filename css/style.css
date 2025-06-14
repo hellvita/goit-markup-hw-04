@@ -159,8 +159,8 @@ button {
   background-color: #404bbf;
 }
 
-.link:hover,
-.link:focus {
+.link:hover:not(.logo),
+.link:focus:not(.logo) {
   color: #404bbf;
 }
 
@@ -362,4 +362,10 @@ button {
 
 main {
   flex-grow: 1;
+}
+
+.animation {
+  transition-property: hover, focus;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
