@@ -10,7 +10,7 @@
   --color-light-slate: #8e8f99;
   --color-cornflower: #e7e9fc;
   --color-cloud: #f4f4fd;
-  --color-white: #ffffff;
+  --color-white: #fff;
 }
 
 body {
@@ -408,6 +408,7 @@ button {
 
 .footer__item.item-title {
   margin-bottom: 16px;
+  color: var(--color-white);
 }
 
 .footer__item.item-title.item-text {
