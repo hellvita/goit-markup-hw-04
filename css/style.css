@@ -55,11 +55,6 @@ img {
   margin: 0 auto;
 }
 
-.link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header {
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px var(--color-navy-blue-8),
@@ -85,6 +80,7 @@ img {
 
 .header .link {
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -338,6 +334,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials.link .icon {
